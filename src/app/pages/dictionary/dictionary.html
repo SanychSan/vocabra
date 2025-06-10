@@ -1,0 +1,15 @@
+<vc-header title="Dictionary"></vc-header>
+
+<main>
+  <cdk-virtual-scroll-viewport class="dictionary-list" itemSize="50">
+    <div *cdkVirtualFor="let item of items" class="item">{{ item }}</div>
+  </cdk-virtual-scroll-viewport>
+
+  <div>
+    <input
+      type="text"
+      placeholder="Search..."
+      class="search-input"
+    />
+  </div>
+</main>
